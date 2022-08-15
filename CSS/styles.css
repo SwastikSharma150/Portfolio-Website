@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    background-color: black;
+    overflow-x: hidden;
+}
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#educationDivider{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+nav li{
+    list-style-type: none;
+    transition: all 100ms ease-in;
+}
+nav li:hover{
+    background-color: #1d7484;
+    padding: 5px 10px;
+    border-radius: 4px;
+ 
+   color: #fff;
+}
+
+button{
+    margin-top: 30%;
+}
+ul > li > a {
+    text-decoration: none;
+    color: white;
+    transition: all 200ms ease-in;
+}
+ul > li > a:hover {
+    color: black;
+}
+#home {
+    width: 100%;
+    display: flex;
+    height: 50vh;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+.swas-img {
+    border-radius:50% 2px 50% 2px;
+    height: 400px;
+    width: 400px;
+}
+.name {
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: onLoadAspiringAnimation 700ms ease-in;
+}
+
+.after-name {
+    color: lightgray;
+    font-size: 1.12rem;
+    font-weight: 500;
+    animation: onLoadAspiringAnimation 900ms ease-in;
+
+    text-transform: uppercase;
+}
+
+@keyframes onLoadAspiringAnimation {
+    0% {
+        transform: translateX(-60px);
+        opacity: 0;
+        color: lightgray;
+    } 100% {
+        color: white;
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+header > nav {
+    top: 0;
+    left: 0;
+    z-index: 10;
+    
+    height: 7vh;
+    background-color: #2196F3;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    align-items: center;
+}
+
+.nav-links {
+    width: 70%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#education {
+    color: white;
+}
+.education-wrapper {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.education-wrapper-item {
+    width: 80%;
+    height: 25vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    background-color: #115994;
+    border-radius: 8px;
+    transition: all 200ms ease-in;
+}
+
+.school-logo {
+    height: 150px;
+    width: 150px;
+}
+.education-wrapper-item:hover {
+    transform: scale(1.04) translateY(-10px);
+}
+.college-logo {
+    height: 200px;
+    width: 220px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+.textInputs{
+    width: 200px;
+    height: 40px;
+    color:white;
+    border-radius: 6px;
+}
+label{
+margin-top: 2px;
+font-style: oblique;
+}
+
+form ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.row_header h1{
+    margin-left: 40%;
+}
+.row_body form{
+    margin-left: 35%;
+}
+form label:hover{
+font-size: large;
+}
+input:hover{
+  border: 2px solid #000;
+}
+
+.form-container{
+    width: 90%;
+    margin-left: 5.5%;
+    background-color: rgb(40, 40, 40);
+    padding: 20px;
+    height: auto;
+    
+    margin-bottom: 30px;
+    color: white;
+    border-radius: 5px;
+}
+.c4 p a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    border: 0.1px dotted #ccc;
+}
+.textInputs {
+    padding: 10px;
+    background-color: rgb(24, 23, 23);
+    border: none;
+    cursor: none;
+}
+p a :hover{
+    font-size: 24px;
+}
+.submit-button{
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    width: 120px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: black;
+}
+.container {
+    max-width: 1000px;
+    padding: 0 1.4rem;
+    margin: 0 auto;
+}
+ 
+h1,h3{
+    text-align: center;
+}
+.isShown{
+    display:block;
+}
+.keepItCenter{
+  position:relative;
+
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+}
+#contact .row_header h1{
+    color: white;
+}
+.isNotShown{
+    display:none;
+}
+
+.right{
+    width: 50%;
+    float: right;
+    background-color: bisque;
+    flex-direction: column;
+}
+
+.left{
+    flex-direction: column;
+
+    width: 50%;
+    background-color: aqua;
+    float: left;
+}
+.left p{
+    margin-left: 10px;
+}
+.right p{
+    margin-left: 10px;
+}
+
+
+.myImageDiv{
+    background-color: antiquewhite;
+    max-width: 50%;
+    margin-left: 30%;
+}
+
+#navBarItems{
+    width: 100%;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.index_container{
+    width: 90%;
+    margin-top: 20%;
+    height: 50%
+     
+}
+table, th, td {
+    border:2px solid white;
+}
+#myImage{
+    width: 370px;
+    height: 550px;
+    border: 2px solid rebeccapurple;
+    object-fit: cover;
+    align-items: center;
+}
+.img-with-text {
+    margin-left: 45%;
+    margin-top: 20%;
+    text-align: justify;
+  
+    width: 200px;
+}
+
+h3{
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.img-with-text img {
+    display: block;
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+h1{
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.innerDiv{
+    position: relative;
+}
+
+.c{
+   padding: 50%;
+   margin-left: 10%;
+   height: 100px;
+   margin-top: 17%;
+}
+
+.grid-item {
+  background-color: rgba(201, 199, 199, 0.8);
+  padding: 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  text-align: center;
+}
+#firstP{
+    margin:0;
+    padding: 0;
+    font-weight: 800;
+}
+#secondP{
+  margin:0;
+  padding: 0;
+    font-weight: 500;
+}
+#thirdP{
+    margin:0;
+    padding: 0;
+    font-weight: 400;
+}
+
+
+.github-logo {
+    height: 70px;
+    width: 70px;
+    transition: all 200ms ease;
+}
+.github-logo:hover  {
+    transform: translateY(10px);
+}
+.column {
+    transition: all 200ms ease-in;
+}
+.column:hover {
+    transition: scale(0.96);
+}
+.column{
+    margin: 10px;
+    border-radius: 2px solid white;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    transition: all 200ms ease-in
+}
+.card:hover {
+    transform: scale(0.96);
+}
+.mainHonestyDiv{
+    margin: 25px;
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+.l{
+    width: 40%;
+    text-align: justify;
+}
+
+.honesty-heading {
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+}
+
+#error{
+    color: red;
+}
+
+@media screen and (max-width: 1990px) {
+    .info {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    header > nav {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+    .nav-links {
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+    }
+    .nav-links {
+        width: 100%;
+    }
+    .nav-links li a {
+        font-size: 1.3rem;
+    }
+    header > nav {
+        height: 5vh;
+    }
+    
+}
+@media screen and (max-width:770px) {
+    
+    .nav-links {
+        width: 100%;
+    }
+    .mainHonestyDiv {
+        margin: 0;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+    .info_table 
+    {
+        width: 100%;
+    }
+    .l {
+        margin-top: 20px;
+        /* margin: 0; */
+        margin-bottom: 10px;
+        width: 50%;
+    }
+    .c4 {
+        width: 100vw;
+    }
+    #text-area {
+        width: 50vw;
+        border-radius: 10px;
+    }
+}
+@media screen and (max-height: 700px) {
+    .swas-img {
+        height: 250px;
+        width: 250px;
+    }
+    
+}
+@media screen and (max-width: 890px) {
+    #home {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 630px) {
+    .swas-img {
+        height: 250px;
+        width: 250px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .swas-img {
+        height: 220px;
+        width: 220px;
+    }
+    .info {
+        width: 70%;
+    }
+    
+}
+@media screen and (max-height: 480px) {
+    .swas-img {
+        height: 210px;
+        width: 210px;
+        margin-top: -50px;
+        object-fit: contain;
+        border-radius: 0;
+    }
+}
+
+#table_css {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  #table_css tr:nth-child(odd){
+    background-color: #000;
+    color: #fff;
+}
+
+  #table_css tr:nth-child(even){
+    background-color: #fff;
+    color: #000;
+}
+#table_css td {
+    padding: 10px;
+}
+#table_css {
+    animation: dance .9s ease-in infinite;
+    margin-bottom: 10px;
+}
+@keyframes dance {
+    from {
+        transform: translateY(10px);
+    }50%{
+        transform: translateY(12px);
+    }to{
+        transform:translateY(10px);
+    }
+    
+}
+
+.download-btn {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(28, 28, 28);
+    width: 200px;
+    padding: 10px;
+    transition: all 150ms ease-in;
+}
+.download-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-height: 1073px) {
+    .swas-img {
+        height: 220px;
+        width: 220px;
+    }
+}
+@media screen and (max-height: 825px) {
+    .swas-img {
+        height: 180px;
+        width: 180px;
+    }
+}
+.text-area {
+    background-color: rgb(24, 23, 23);;
+}
+@media screen and (max-width: 900px) {
+    
+    .c4 {
+        width: 100%;
+    }
+    .c4 p {
+        width:100%;
+    }
+    .after-name {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .name {
+        font-size: 1rem;
+    }
+    .after-name {
+        font-size: .6rem;
+    }
+    .nav-links li a {
+        font-size: .8rem;
+    }
+    .l {
+        width: 80%;
+    }
+    .cardhonesty {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .nav-links li a {
+        font-size: .6rem;
+    }
+    .college-logo {
+        width: 150px;
+        height: 150px;
+    }
+    .college-name h4 {
+        font-size: .9rem;
+    }
+    .location {
+        font-size: .7rem;
+    }
+    .grade {
+        font-size: .8rem;
+        font-weight: 600;
+    }
+    .course {
+        font-size: .7rem;
+    }
+    .duration {
+        font-size: .75rem;
+    }
+}
